@@ -24,3 +24,10 @@ Specially thanks.
 **Source**: by [lhie1](https://github.com/lhie1/Rules/blob/master/Surge/Surge%203/Module/Weibo.sgmodule)
 
 **Updated**: Jan 20, 2021
+
+## [tiktok_unlock](./modules/tiktok_unlock)
+**Description**: Unlock the TikTok region restriction.
+
+**Source**: by [Semporia](https://github.com/Semporia/TikTok-Unlock/tree/master/Surge)
+
+**Updated**: Feb 26, 2021
