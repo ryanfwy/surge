@@ -3,7 +3,6 @@
 #!system=ios
 
 [Script]
-
 testflight_unlock = type=http-request,pattern=^https?://testflight.apple.com/v\d/accounts/.+?/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ryanfwy/surge/master/scripts/testflight_unlock.js
 
 [MITM]
