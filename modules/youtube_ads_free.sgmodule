@@ -16,9 +16,6 @@ URL-REGEX,https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
 URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
 URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
 
-[URL Rewrite]
-ctier=[A-Z] citer=A 302
-
 [Script]
 youtube_ads_free = type=http-request,pattern=https?://.+?\.googlevideo.com/.+&(oad|ctier)=(?!A),script-path=https://raw.githubusercontent.com/ryanfwy/surge/master/scripts/youtube_ads_free.js
 
