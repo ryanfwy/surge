@@ -17,7 +17,7 @@ URL-REGEX,https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
 URL-REGEX,https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
 
 [Script]
-youtube_ads_free = type=http-request,pattern=https?://.+?\.googlevideo.com/.+&(oad|ctier)=(?!A),script-path=https://raw.githubusercontent.com/ryanfwy/surge/master/scripts/youtube_ads_free.js
+youtube_ads_free = type=http-request,pattern=https?://.+?\.googlevideo.com/.+&(oad|ctier)=(?!A)&,script-path=https://raw.githubusercontent.com/ryanfwy/surge/master/scripts/youtube_ads_free.js
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com
