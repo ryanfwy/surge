@@ -5,7 +5,7 @@ if ($request.url.indexOf("&oad") != -1) {
         }
     });
 } else if ($request.url.indexOf("&ctier") != -1) {
-    let url = $request.url.replace(/ctier=[A-Z]/, "ctier=A");
+    let url = $request.url.replace(/ctier=[^A]/, "ctier=A");
     $done({
         response: {
             status: 302,
