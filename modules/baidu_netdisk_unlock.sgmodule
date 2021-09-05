@@ -1,0 +1,9 @@
+#!name=Baidu Netdisk Unlock
+#!desc=Unlock the VIP of Baidu Netdisk.
+#!system=ios
+
+[Script]
+http-response ^https?://pan\.baidu\.com/rest/\d\.\d/membership/user\?.+&firstlaunchtime=\d+ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ryanfwy/surge/master/scripts/baidu_netdisk_unlock.js
+
+[MITM]
+hostname = %APPEND% pan.baidu.com
